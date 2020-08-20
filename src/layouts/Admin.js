@@ -33,7 +33,7 @@ const switchRoutes = (
       }
       return null;
     })}
-    <Redirect from="/admin" to="/admin/dashboard" />
+    <Redirect from="/admin" to="/admin/home" />
   </Switch>
 );
 
@@ -100,17 +100,31 @@ export default function Admin({ ...rest }) {
         image={image}
         handleDrawerToggle={handleDrawerToggle}
         open={mobileOpen}
-        color={color} 
+        color={color}
         {...rest}
       />
 
       <div className={classes.mainPanel} ref={mainPanel}>
-      <div style={{display: 'flex', justifyContent: 'center', marginBottom: '-30px'}}>
-        <img src="http://merakisi.southcentralus.cloudapp.azure.com/rifa-img/logorifa.jpg"/>
-      </div>
-      <div style={{display: 'flex', justifyContent: 'center', marginTop: '35px'}}>
-        <a style={{ color: 'maroon', fontsize: 2 }}>Esse é um site de entretenimento. Não é uma plataforma de jogo.</a>
-      </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginBottom: "-30px",
+          }}
+        >
+          <img src="http://merakisi.southcentralus.cloudapp.azure.com/rifa-img/logorifa.jpg" />
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "35px",
+          }}
+        >
+          <a style={{ color: "maroon", fontsize: 2 }}>
+            Esse é um site de entretenimento. Não é uma plataforma de jogo.
+          </a>
+        </div>
 
         <Navbar
           routes={routes}
