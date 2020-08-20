@@ -53,7 +53,7 @@ function Modal(props) {
         localStorage.setItem("nome", usuario[0].USUA_NOME);
         localStorage.setItem("logado", true);
         dispatch(UsuarioAction.resetUsuario());
-        window.location.href = "/admin/home";
+        window.location.href = "/";
       }
     }
   }, [usuario]);
