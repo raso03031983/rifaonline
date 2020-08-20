@@ -20,7 +20,7 @@ ReactDOM.render(
       <Switch>
         <AuthContext>
           <Route path="/admin" component={Admin} />
-          <Redirect from="/" to="/admin/" />
+          <Redirect from="/" to="/admin/home" />
         </AuthContext>
       </Switch>
     </Router>
