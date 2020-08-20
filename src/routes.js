@@ -13,35 +13,35 @@ const logado = localStorage.getItem("logado");
 
 const dashboardRoutes = [
   {
-    path: "/admin/home",
+    path: "/home",
     name: "Home",
     icon: HomeIcon,
     component: Home,
     layout: "/admin",
   },
   {
-    path: "/admin/perfil",
+    path: "/perfil",
     name: "Perfil",
     icon: UserIcon,
     component: Perfil,
     layout: "/admin",
   },
   {
-    path: "/admin/rifa",
+    path: "/rifa",
     name: "Rifa",
     icon: Dashboard,
     component: Rifa,
     layout: "/admin",
   },
   {
-    path: "/admin/pagamento",
+    path: "/pagamento",
     name: "Formas de Pagamento",
     icon: HomeIcon,
     component: Pagamento,
     layout: "/admin",
   },
   {
-    path: "/admin/regras",
+    path: "/regras",
     name: "Regras",
     icon: HomeIcon,
     component: Regras,
@@ -51,21 +51,21 @@ const dashboardRoutes = [
 
 const dashboardRoutes2 = [
   {
-    path: "/admin/home",
+    path: "/home",
     name: "Home",
     icon: HomeIcon,
     component: Home,
     layout: "/admin",
   },
   {
-    path: "/admin/pagamento",
+    path: "/pagamento",
     name: "Formas de Pagamento",
     icon: HomeIcon,
     component: Pagamento,
     layout: "/admin",
   },
   {
-    path: "/admin/regras",
+    path: "/regras",
     name: "Regras",
     icon: HomeIcon,
     component: Regras,
