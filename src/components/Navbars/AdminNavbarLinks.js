@@ -94,8 +94,8 @@ export default function AdminNavbarLinks(props) {
 
   const handleLogout = () => {
     localStorage.clear();
-    //window.location.href = "/admin/home";
-    history.push("/admin/home");
+    window.location.href = "/admin/";
+    //history.push("/admin/home");
   };
 
   return (
