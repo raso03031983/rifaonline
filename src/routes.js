@@ -9,40 +9,39 @@ import Rifa from "views/Rifa/Rifa";
 import Regras from "views/Regras/Regras";
 import Pagamento from "views/Pagamento/Pagamento";
 
-
 const logado = localStorage.getItem("logado");
 
 const dashboardRoutes = [
   {
-    path: "/home",
+    path: "/admin/home",
     name: "Home",
     icon: HomeIcon,
     component: Home,
     layout: "/admin",
   },
   {
-    path: "/perfil",
+    path: "/admin/perfil",
     name: "Perfil",
     icon: UserIcon,
     component: Perfil,
     layout: "/admin",
   },
   {
-    path: "/rifa",
+    path: "/admin/rifa",
     name: "Rifa",
     icon: Dashboard,
     component: Rifa,
     layout: "/admin",
   },
   {
-    path: "/pagamento",
+    path: "/admin/pagamento",
     name: "Formas de Pagamento",
     icon: HomeIcon,
     component: Pagamento,
     layout: "/admin",
   },
   {
-    path: "/regras",
+    path: "/admin/regras",
     name: "Regras",
     icon: HomeIcon,
     component: Regras,
@@ -52,21 +51,21 @@ const dashboardRoutes = [
 
 const dashboardRoutes2 = [
   {
-    path: "/home",
+    path: "/admin/home",
     name: "Home",
     icon: HomeIcon,
     component: Home,
     layout: "/admin",
   },
   {
-    path: "/pagamento",
+    path: "/admin/pagamento",
     name: "Formas de Pagamento",
     icon: HomeIcon,
     component: Pagamento,
     layout: "/admin",
   },
   {
-    path: "/regras",
+    path: "/admin/regras",
     name: "Regras",
     icon: HomeIcon,
     component: Regras,

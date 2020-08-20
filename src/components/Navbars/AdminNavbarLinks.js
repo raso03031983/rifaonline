@@ -22,11 +22,13 @@ import Button from "components/CustomButtons/Button.js";
 import ModalLogin from "../../views/Perfil/ModalLogin";
 import ModalCadastrar from "../../views/Perfil/ModalCadastrar";
 
+import history from "../../history";
+
 import styles from "assets/jss/material-dashboard-react/components/headerLinksStyle.js";
 
 const useStyles = makeStyles(styles);
 
-export default function AdminNavbarLinks() {
+export default function AdminNavbarLinks(props) {
   const [modal, setModal] = React.useState(null);
   const [modalCad, setModalCad] = React.useState(null);
   const classes = useStyles();
@@ -93,6 +95,7 @@ export default function AdminNavbarLinks() {
   const handleLogout = () => {
     localStorage.clear();
     window.location.href = "/admin/home";
+    //history.push("/admin/home");
   };
 
   return (
